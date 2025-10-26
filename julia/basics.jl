@@ -66,6 +66,16 @@ matt = [1 3 4.5;4 5 0.8]
 # Vector of Row 2, column 2 to 3
 matt[2,2:3]
 
+A = [2, 4]
+B = [1, 3]
+
+A*B
+
+
+
+
+
+
 # Define abstract type
 abstract type BaseInterface end
 

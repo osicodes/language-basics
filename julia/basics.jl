@@ -1,3 +1,4 @@
+using LinearAlgebra
 #=
 Press shift-enter in each line to execute it
 =#
@@ -66,17 +67,22 @@ matt = [1 3 4.5;4 5 0.8]
 # Vector of Row 2, column 2 to 3
 matt[2,2:3]
 
-A = [2, 4]
-B = [1, 3]
+A = [2; 4]
+B = [1; 3]
+C = [5; 2]
 
-A*B
+dot(A,B)
+A .* C
 
+D = [1  5]
 
+A * D
 
 
 
 
 # Define abstract type
+
 abstract type BaseInterface end
 
 # Create a class that inherits from abstract type

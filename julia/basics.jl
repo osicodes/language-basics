@@ -1,4 +1,9 @@
-using LinearAlgebra
+# To open Pluto notebook, first add 'Pluto' package
+# then 
+#       import Pluto
+#       Pluto.run()
+
+using LinearAlgebra,  Markdown, PlutoUI
 #=
 Press shift-enter in each line to execute it
 =#
@@ -78,11 +83,18 @@ D = [1  5]
 
 A * D
 
+md"""
+# My Markdown
+This is **bold**, *italic*, and here’s a list:
+
+- Item 1
+- Item 2
+- Item 3
+"""
 
 
 
 # Define abstract type
-
 abstract type BaseInterface end
 
 # Create a class that inherits from abstract type
@@ -133,4 +145,6 @@ mutable struct Persons <: BaseInterface
 end
 
 obosi::Persons = Persons("Osinachi")
+
+
 

@@ -18,6 +18,16 @@ for i=1:5
     println(i)
 end
 
+t = a -> a^2
+t(2)
+
+h = collect(0:0.2:10)
+z = collect(x^2 for x in h)
+y = h.^2
+
+using  Plots
+plot(h,z)
+
 x::Int = 12 #  Define variable 'x' with type 'int'
 
 typeof(x) # get the type of variable 'x'
